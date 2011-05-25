@@ -12,7 +12,8 @@
 @implementation LoadEarlierMessageCell
 
 - (id)initWithDelegate:(id)target {
-    if (self = [super initWithFrame:CGRectZero reuseIdentifier:@"loadEarlierMessageCell"]) {
+    self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"loadEarlierMessageCell"];
+    if (self) {
         
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         
@@ -20,7 +21,7 @@
         [loadButton setTitle:@"Load Earlier Messages" forState:UIControlStateNormal];
         [loadButton setTitleColor:[UIColor cellLabelColor] forState:UIControlStateNormal];
         [loadButton setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
-        loadButton.font = [UIFont boldSystemFontOfSize:15];
+        loadButton.titleLabel.font = [UIFont boldSystemFontOfSize:15];
 
         UIImage *btnImage = [[UIImage imageNamed:@"EarlierButton.png"] stretchableImageWithLeftCapWidth:8 topCapHeight:0];
         [loadButton setBackgroundImage:btnImage forState:UIControlStateNormal];

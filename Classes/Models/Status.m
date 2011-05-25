@@ -26,7 +26,6 @@ static NSInteger sortByDateDesc(id a, id b, void *context)
 
 @implementation Status
 
-@synthesize user;
 @synthesize source;
 @synthesize favorited;
 @synthesize truncated;

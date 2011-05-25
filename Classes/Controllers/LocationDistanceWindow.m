@@ -14,7 +14,7 @@
 
 - (id)initWithDelegate:(id)anDelegate selectedRow:(int)index
 {
-    if (self = [super initWithFrame:CGRectMake(0, 0, 320, 480)]) {
+    if (self == [super initWithFrame:CGRectMake(0, 0, 320, 480)]) {
         
         delegate = anDelegate;
         
@@ -43,7 +43,7 @@
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         [button setTitle:@"Done" forState:UIControlStateNormal];
         [button addTarget:self action:@selector(hide:) forControlEvents:UIControlEventTouchUpInside];
-        button.font = [UIFont boldSystemFontOfSize:20];
+        button.titleLabel.font = [UIFont boldSystemFontOfSize:20];
         button.frame = CGRectMake(20, 228, 280, 52);
         
         UIImage *alertImage = [[UIImage imageNamed:@"distancePickerButton.png"] stretchableImageWithLeftCapWidth:14 topCapHeight:0];

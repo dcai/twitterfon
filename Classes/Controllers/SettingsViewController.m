@@ -123,8 +123,8 @@ static NSString* sSectionHeader[NUM_SECTIONS] = {
                 cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:@"helpCell"] autorelease];
             }
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-            cell.text =  @"Open Help Page";
-            cell.textAlignment = UITextAlignmentCenter;
+            cell.textLabel.text =  @"Open Help Page";
+            cell.textLabel.textAlignment = UITextAlignmentCenter;
             break;
             
         default:

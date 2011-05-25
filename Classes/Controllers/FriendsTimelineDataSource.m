@@ -24,8 +24,6 @@
 
 @implementation FriendsTimelineDataSource
 
-@synthesize timeline;
-@synthesize contentOffset;
 
 - (id)initWithController:(UITableViewController*)aController tweetType:(TweetType)type
 {

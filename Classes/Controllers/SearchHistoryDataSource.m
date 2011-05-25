@@ -73,7 +73,7 @@
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
     }
-    cell.text = [queries objectAtIndex:indexPath.row];
+    cell.textLabel.text = [queries objectAtIndex:indexPath.row];
     return cell;
 }
 
